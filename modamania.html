@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pagina inicial</title>
+		<meta charset="utf-8">
+		<meta name="description" content="pagina html">
+		<meta name="keywords" content="html puro">
+		<meta name="author" content="armenio mendes">
+		<link rel="stylesheet" type="text/css" href="moda.css">
+	</head>
+	<body onload="slider();">
+		<header>
+			<div class="box-img">
+				<img src="modelos/27971858_963568920473858_7985409532401640323_n.jpg" id="imgSlider">
+			</div>
+			<div class="over-lay">	
+					<ul>
+						<li><a href=""><img src="Help_50px.png"></a></li>
+						<li><a href=""><img src="Customer_64px.png"></a></li>
+						<li><a href=""><img src="Shopping Bag_50px.png"></a></li>
+						<li><a href=""><img src="Home_64px.png"></a></li>
+						<p>MANIA DE V3ZTIR</p>
+					</ul>
+				</div>
+				<h1>Coleção<br>  para <mark>verao</mark></h1>
+			</div>
+			<a href="" id="ãnchora"><span>Adicionar a carinho de compra</span><img src="Shopping Cart_50px.png"></a>
+		</header>
+		<section>
+			<!--ainda em dev-->	
+		</section>
+		<article>
+			<!--ainda em dev-->		
+		</article>	
+			<aside>
+				
+			</aside>	
+			<footer>
+				
+			</footer>
+
+			<script>
+				var imgSlider = document.getElementById('imgSlider');
+				var img = new Array (
+					"modelos/19247926_987922291371854_5439882595687944458.jpg",
+					"modelos/28277320_967888880041862_7390117457290906385_n.jpg",
+					"modelos/26910295_947216235442460_6019833973388404232_o.jpg",
+					"modelos/27971858_963568920473858_7985409532401640323_n.jpg"
+					);
+
+				var len =  img.length;
+				var i=0;
+
+				function slider(){
+					if (i > len-1) {
+						i=0;
+					}
+
+					imgSlider.src = img[i];
+					i++;
+					setTimeout("slider()",3000);
+				}
+
+
+			</script>
+	</body>
+</html>
