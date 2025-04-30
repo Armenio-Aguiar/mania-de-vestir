@@ -91,9 +91,9 @@ h1{
  	border-radius:5px;
 	position: absolute;
 	margin:10px 40%;
-	color: #fff;
+	color: #777;
 	text-decoration: none;
-	background: blue;
+	background: yellow;
 	padding: 8px;
 
 }
@@ -111,7 +111,7 @@ body:hover #ãnchora{
 }
 #ãnchora span{
 	font-family: arial;
-	color: #fff;
+	color: #000;
 	float: left;
 	margin: 5px;
 
